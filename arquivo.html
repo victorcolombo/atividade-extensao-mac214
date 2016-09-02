@@ -1,0 +1,27 @@
+---
+layout: page
+title: Arquivo
+permalink: /arquivo/
+---
+
+{% assign total = 0 %}
+
+<h3>Simulados (5 horas cada)</h3>
+{% for post in site.categories.simulados %}
+    <li><a href="{{site.baseurl}}{{post.url}}">{{ post.title }}</a></li>
+    {% assign total = total | plus: 5 %}
+{% endfor %}
+
+<h3>Competições (5 horas cada)</h3>
+{% for post in site.categories.competicoes %}
+    <li><a href="{{site.baseurl}}{{post.url}}">{{ post.title }}</a></li>
+    {% assign total = total | plus: 5 %}
+{% endfor %}
+
+<h3>Treinos (3 horas cada)</h3>
+{% for post in site.categories.treinos %}
+    <li><a href="{{site.baseurl}}{{post.url}}">{{ post.title }}</a></li>
+    {% assign total = total | plus: 3 %}
+{% endfor %}
+
+<h3>Total de horas: {{total}}</h3>
