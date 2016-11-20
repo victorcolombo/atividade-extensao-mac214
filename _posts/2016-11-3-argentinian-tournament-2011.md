@@ -26,9 +26,11 @@ São dadas duas sequências de semi-circulos alternando concavidades como na ima
 
 Nossa primeira ideia foi derivar a função distância entre duas curvas que modelasse os semi-circulos. Como as contas de alongaram muito partimos para uma abordagem mais computacional.
 
-Primeiramente é necessário notar que a distância entre dois semi-circulos é uma [[função unimodal](https://en.wikipedia.org/wiki/Unimodality). Assim, podemos aplicar [busca ternária](https://en.wikipedia.org/wiki/Ternary_search) entre dois circulos para encontrar a distâcia mínima, sempre lembrando de testar os pontos extremos que também são candidatos.
+Primeiramente é necessário notar que a distância entre dois semi-circulos é uma [[função unimodal](https://en.wikipedia.org/wiki/Unimodality). 
 
-Depois disso, precisamos selecionar cada par de circulos que se intersectam. Para isso utilizamos um simples *line sweep*.
+Sabendo isso podemos aplicar [busca ternária](https://en.wikipedia.org/wiki/Ternary_search) entre dois circulos para encontrar a distâcia mínima, sempre lembrando de testar os pontos extremos que também são candidatos.
+
+Agora basta selecionar cada par de circulos que se intersectam, que pode ser feito com um simples *line sweep*.
 
 ```c++
 /*
