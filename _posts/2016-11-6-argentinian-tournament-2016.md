@@ -4,7 +4,7 @@ title: Argentinian Programming Tournament 2016
 categories: simulados
 ---
 
-A "saideira", último contest antes da final.
+A "saideira", último contest em time antes da final.
 
 ### Recursos
 * [Problemas](http://torneoprogramacion.com.ar/wp-content/uploads/2016/09/tap2016.pdf)
