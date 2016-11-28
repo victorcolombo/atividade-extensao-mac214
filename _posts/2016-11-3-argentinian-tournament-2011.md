@@ -7,11 +7,13 @@ categories: simulados
 As vésperas da final brasileira, continuamos nossa sequência de TAPs.
 
 ### Recursos
-* [Problemas](http://www.dc.uba.ar/events/icpc/2011/taip-standings.html)
-* [Placar oficial](https://icpc.baylor.edu/regionals/finder/torneo-argentino-2011/standings)
+* [Problemas](http://torneoprogramacion.com.ar/wp-content/uploads/2015/07/pruebaTAIP2011.pdf)
+* [Placar oficial](http://www.dc.uba.ar/events/icpc/2011/taip-standings.html)
 * [Placar do simulado](https://www.codepit.io/#/contest/581baedb27d7d8001a42cbb7/view)
 
 ### Comentários
+
+Um ótimo contest de equipe! Cada um executou sua função e ainda conseguimos resolver o problema F "de primeira", o que é especialmente difícil em problemas envolvendo pontos flutuantes.
 
 
 ### Problema
@@ -26,7 +28,7 @@ São dadas duas sequências de semi-circulos alternando concavidades como na ima
 
 Nossa primeira ideia foi derivar a função distância entre duas curvas que modelasse os semi-circulos. Como as contas de alongaram muito partimos para uma abordagem mais computacional.
 
-Primeiramente é necessário notar que a distância entre dois semi-circulos é uma [[função unimodal](https://en.wikipedia.org/wiki/Unimodality). 
+Primeiramente é necessário notar que a distância entre dois semi-circulos é uma [função unimodal](https://en.wikipedia.org/wiki/Unimodality). 
 
 Sabendo isso podemos aplicar [busca ternária](https://en.wikipedia.org/wiki/Ternary_search) entre dois circulos para encontrar a distâcia mínima, sempre lembrando de testar os pontos extremos que também são candidatos.
 
