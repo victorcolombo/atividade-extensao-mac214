@@ -22,4 +22,4 @@ Mas não vou, não hoje. Faziam muitos sábados e domingos que passava a tarde n
 
 Gostaria de agradecer a essa matéria por me propiciar a oportunidade de me dedicar aos meus interesses extracurriculares e escrever sobre isso.
 
-return EXIT_SUCESS;
+return EXIT_SUCCESS;
